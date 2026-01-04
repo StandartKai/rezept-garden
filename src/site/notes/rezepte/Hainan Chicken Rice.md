@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/rezepte/hainan-chicken-rice/","tags":["gardenEntry"]}
 ---
 
+# Hainan Chicken Rice
 
 *Serves: 2*
 ## Ingredients
