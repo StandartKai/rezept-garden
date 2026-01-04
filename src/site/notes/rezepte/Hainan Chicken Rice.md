@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/rezepte/hainan-chicken-rice/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/rezepte/hainan-chicken-rice/"}
 ---
 
 # Hainan Chicken Rice
