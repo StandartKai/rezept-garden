@@ -4,8 +4,6 @@
 
 # Smash Burgers
 
-*Serves: 2*
-
 ## Ingredients
 - Ground beef (20% fat), 70-85g per patty (1-2 per burger)
 - [[rezepte/Pickled Onions\|Pickled Onions]]
