@@ -2,15 +2,24 @@
 {"dg-publish":true,"permalink":"/rezepte/pickled-onions/"}
 ---
 
+# Pickled Onions
 
-## Zutaten
+*Serves: 1 Jar*
 
-- Rote Zwiebeln
-- Essig
-- Wasser
-- Salz
-## Anleitung
+## Ingredients
+- Red onions
+- Vinegar
+- Water
+- Salt
 
-- Zwiebeln **längs** schneiden
-- Glasgefäß ist am besten
-- Sud aus 1:1 Wasser und Essig + Prise Salz aufkochen und über die Zwiebeln gießen
+---
+
+## Instructions
+### Step 1: Prep
+1. Slice the red onions **lengthwise**.
+2. Place the sliced onions into a glass jar (a glass container works best).
+
+### Step 2: Pickling
+1. Combine the water and vinegar in a 1:1 ratio.
+2. Add a pinch of salt and bring the mixture to a boil.
+3. Pour the hot brine directly over the onions in the jar.
