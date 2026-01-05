@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/rezepte/home/","tags":["gardenEntry"]}
 ---
 
-Welcome!
 ## Recipes
 
 [[rezepte/Hainan Chicken Rice\|Hainan Chicken Rice]]
