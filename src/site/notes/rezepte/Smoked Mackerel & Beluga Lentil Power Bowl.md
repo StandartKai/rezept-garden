@@ -5,7 +5,7 @@
 # Smoked Mackerel & Beluga Lentil Power Bowl
 
 *Serves: 2 (Generous portions)*
-![makrel.png|300](/img/user/images/makrel.png)
+![makreli.png|300](/img/user/images/makreli.png)
 ## Ingredients
 - **The Protein & Fats:**
     - 200g Smoked Mackerel - *Look for "Pfeffermakrele" fillets in the fridge section.*
