@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/rezepte/home/","tags":["gardenEntry"]}
 ---
 
-![robo.png|500](/img/user/images/robo.png)
 ## Recipes
 
 [[rezepte/Hainan Chicken Rice\|Hainan Chicken Rice]]
