@@ -35,3 +35,8 @@
 1.  **Pressure Cook Lentils:** Rinse lentils. Add to the pressure cooker with water/stock and the bay leaf. Cook on **High Pressure for 6 minutes**, then Quick Release. (If they are slightly firm, that is perfect for salad).
 2.  **The Temper:** Drain the lentils well. Immediately dump the **hot** lentils into the bowl with the pickled onions and toss. *Science: The hot starch absorbs the acidity and onion flavor better than cold lentils.*
 3.  **Finish:** Add the olive oil, cucumber, walnuts, and parsley. Mix well. Finally, gently fold in the mackerel chunks and crumbled feta (do this last so they don't disintegrate). Taste for salt/pepper.
+
+---
+
+## 💡 Notes & Tips
+- **Kit Instructions:** For the **Instant Pot**, 6 minutes High Pressure + Quick Release is standard for firm Beluga lentils. If using a standard stovetop pot, simmer for 20–25 minutes until al dente.
