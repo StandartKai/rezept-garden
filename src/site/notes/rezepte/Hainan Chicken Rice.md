@@ -6,7 +6,7 @@
 
 *Serves: 2*
 
-![chicken_rice.jpeg|500](/img/user/images/chicken_rice.jpeg)
+![chicken_rice.png|500](/img/user/images/chicken_rice.png)
 ## Ingredients
 *   **Chicken:** 2 large chicken breasts
 *   **Rice Base:** 1 LOBO Chicken Rice Kit (includes rice paste, dipping sauce, and soup/broth seasoning)
