@@ -5,7 +5,7 @@
 # No-Stress Longevity Sourdough Bread
 
 *Serves: 1 Large Loaf (approx. 10–12 slices)*
-
+![bread.png|500](/img/user/images/bread.png)
 ## Ingredients
 - **350g Wheat Flour Type 1050** — *Provides structure and high mineral content.*
 - **100g Rye Flour Type 1150** — *Adds depth of flavor and moisture.*
