@@ -5,7 +5,7 @@
 # Pickled Onions
 
 *Serves: 1 Jar*
-
+![onion.png|500](/img/user/images/onion.png)
 ## Ingredients
 - Red onions
 - Vinegar
