@@ -6,6 +6,7 @@
 
 *Philosophy: Treat your starter like a cactus, not a puppy. Rye is robust and forgiving. This routine is designed for baking once a week.*
 
+![starter.png|500](/img/user/images/starter.png)
 ## The Setup
 - **The Flour:** 100% Whole Grain Rye Flour
 - **The Vessel:** A clean glass jar
