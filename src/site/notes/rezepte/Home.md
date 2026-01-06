@@ -7,6 +7,7 @@
 [[rezepte/Hainan Chicken Rice\|Hainan Chicken Rice]]
 [[rezepte/Smash Burger\|Smash Burger]]
 [[rezepte/Sourdough Bread\|Sourdough Bread]]
+[[rezepte/Smoked Mackerel & Beluga Lentil Power Bowl\|Smoked Mackerel & Beluga Lentil Power Bowl]]
 
 ## Ingredients
 
