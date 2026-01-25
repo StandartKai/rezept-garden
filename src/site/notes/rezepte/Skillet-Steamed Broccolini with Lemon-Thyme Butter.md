@@ -4,7 +4,7 @@
 
 
 *Serves: 2*
-![broccolinis.png|500](/img/user/images/broccolinis.png)
+![broccolini.png|500](/img/user/images/broccolini.png)
 
 ## Ingredients
 - 1 bunch Broccolini (washed and trimmed)
