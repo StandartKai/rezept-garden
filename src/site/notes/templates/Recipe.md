@@ -7,6 +7,8 @@
 
 *Serves: 2*
 
+![Descriptive alt text|500](/img/user/images/filename.png)
+
 ## Ingredients
 -
 -

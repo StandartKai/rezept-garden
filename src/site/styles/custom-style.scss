@@ -1,13 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap");
+
+/***
+  Rezept Garden — custom theme.
+  Loaded after obsidian-base / _theme / digital-garden-base, so it wins.
+  Palette + type tokens live on `body`; theme-var overrides need the
+  `body.theme-*` selector to outrank the upstream theme's `.theme-light`.
+***/
+
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    // Warm editorial palette
+    --rg-bg: #fbf7f0;
+    --rg-bg-tint: #f4ece0;
+    --rg-surface: #ffffff;
+    --rg-ink: #2a211d;
+    --rg-ink-soft: #6b5d55;
+    --rg-ink-faint: #9a8b81;
+    --rg-line: #e7dccd;
+    --rg-accent: #c0552e;
+    --rg-accent-dark: #9d4324;
+    --rg-accent-wash: #f7e9e2;
+    --rg-herb: #5d7048;
+
+    --rg-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+    --rg-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --rg-radius: 14px;
+    --rg-shadow: 0 1px 2px rgba(42, 33, 29, 0.05), 0 6px 20px rgba(42, 33, 29, 0.07);
+    --rg-shadow-lift: 0 2px 4px rgba(42, 33, 29, 0.06), 0 14px 34px rgba(42, 33, 29, 0.12);
+
+    // Digital Garden layout knobs
+    --dg-content-max-width: 720px;
+    --dg-content-padding-top: 44px;
+    --dg-content-padding-top-mobile: 32px;
+    --dg-content-font-size: 17.5px;
+    --dg-content-line-height: 1.7;
+    --dg-navbar-height: 64px;
+    --dg-navbar-title-size-mobile: 15px;
+}
+
+body.theme-dark {
+    --rg-bg: #17140f;
+    --rg-bg-tint: #221d17;
+    --rg-surface: #201b15;
+    --rg-ink: #f0e7dc;
+    --rg-ink-soft: #b8a99c;
+    --rg-ink-faint: #8a7c70;
+    --rg-line: #372f26;
+    --rg-accent: #e5825a;
+    --rg-accent-dark: #f0a183;
+    --rg-accent-wash: #2e211a;
+    --rg-herb: #9cb37f;
+    --rg-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.35);
+    --rg-shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.35), 0 14px 34px rgba(0, 0, 0, 0.5);
+}
+
+body.theme-light,
+body.theme-dark {
+    --background-primary: var(--rg-bg);
+    --background-primary-alt: var(--rg-bg-tint);
+    --background-secondary: var(--rg-bg);
+    --background-secondary-alt: var(--rg-bg-tint);
+    --text-normal: var(--rg-ink);
+    --text-muted: var(--rg-ink-soft);
+    --text-faint: var(--rg-ink-faint);
+    --text-accent: var(--rg-accent);
+    --text-accent-hover: var(--rg-accent-dark);
+    --font-default: var(--rg-sans);
+    --font-text-theme: var(--rg-sans);
+
+    // The upstream theme paints h1–h6 in graduated blues; retint to the warm scale.
+    --h1-color: var(--rg-ink);
+    --h2-color: var(--rg-ink);
+    --h3-color: var(--rg-ink);
+    --h4-color: var(--rg-ink);
+    --h5-color: var(--rg-ink);
+    --h6-color: var(--rg-ink);
+    --inline-title-color: var(--rg-ink);
+}
+
+body {
+    background: var(--rg-bg);
+    color: var(--rg-ink);
+    font-family: var(--rg-sans);
+    font-size: var(--dg-content-font-size);
+    line-height: var(--dg-content-line-height);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ---------------------------------------------------------------- navbar */
+
+.navbar {
+    height: var(--dg-navbar-height);
+    background: color-mix(in srgb, var(--rg-bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--rg-line);
+    padding-left: clamp(1.25rem, 5vw, 3rem);
+    padding-right: clamp(1.25rem, 5vw, 3rem);
+
+    // The template hard-codes `margin: 15px !important` inline on this h1,
+    // so only the type treatment is ours to set.
+    h1 {
+        font-family: var(--rg-display);
+        font-optical-sizing: auto;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--rg-ink);
+        line-height: 1.2;
+        border: none;
+        padding: 0;
+        transition: color 0.18s ease;
+
+        &::after { content: none; }
+    }
+
+    .navbar-inner:hover h1 { color: var(--rg-accent); }
+
+    @media (max-width: 800px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+/* --------------------------------------------------------------- content */
+
+main.content {
+    max-width: var(--dg-content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--dg-content-padding-top) clamp(1.25rem, 5vw, 2rem) 6rem;
+
+    @media (max-width: 800px) {
+        padding-top: var(--dg-content-padding-top-mobile);
+    }
+}
+
+// The template already offsets by navbar height; keep our padding on top of it.
+body.has-navbar main.content { margin-top: var(--dg-navbar-height); }
+
+
+/* -------------------------------------------------------------- headings */
+
+main.content {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--rg-display);
+        font-optical-sizing: auto;
+        color: var(--rg-ink);
+        letter-spacing: -0.018em;
+        text-wrap: balance;
+    }
+
+    // Recipe title
+    h1 {
+        font-size: clamp(2.1rem, 6vw, 3rem);
+        font-weight: 700;
+        line-height: 1.08;
+        margin: 0 0 1.25rem;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 3.25rem;
+            height: 3px;
+            margin-top: 1rem;
+            border-radius: 2px;
+            background: var(--rg-accent);
+        }
+    }
+
+    // Section headings: Ingredients / Instructions / Notes
+    h2 {
+        font-size: 1.55rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 3rem 0 1.1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--rg-line);
+    }
+
+    // Step headings and ingredient sub-groups
+    h3 {
+        font-size: 1.14rem;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 2rem 0 0.6rem;
+        color: var(--rg-accent-dark);
+        letter-spacing: 0.005em;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1.5rem 0 0.5rem;
+        color: var(--rg-ink-soft);
+    }
+
+    p { margin: 0 0 1.05rem; }
+
+    // The template's `*Serves: 2*` line, when it leads the note
+    h1 + p > em:only-child {
+        display: inline-block;
+        font-family: var(--rg-sans);
+        font-style: normal;
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--rg-accent-dark);
+        background: var(--rg-accent-wash);
+        border-radius: 999px;
+        padding: 0.34rem 0.85rem;
+    }
+}
+
+
+/* ----------------------------------------------------------------- links */
+
+main.content a {
+    color: var(--rg-accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--rg-accent) 35%, transparent);
+    transition: color 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+
+    &:hover {
+        color: var(--rg-accent-dark);
+        border-bottom-color: var(--rg-accent-dark);
+    }
+}
+
+// Wikilinks between recipes read as inline chips.
+main.content a.internal-link {
+    font-weight: 500;
+    border-bottom-style: solid;
+
+    &:hover { background: var(--rg-accent-wash); }
+}
+
+// Cards opt out of the underline treatment entirely.
+main.content .rg-card,
+main.content .rg-hero a {
+    border-bottom: none;
+}
+
+
+/* ---------------------------------------------------------------- images */
+
+// The `picture` build transform rewrites each markdown <img> into a <picture>.
+main.content > picture,
+main.content > p > picture,
+main.content > picture > img,
+main.content > p > picture > img,
+main.content > p > img,
+main.content > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+main.content > picture,
+main.content > p:has(> picture),
+main.content > p:has(> img) {
+    margin: 0 0 2.25rem;
+}
+
+main.content picture > img,
+main.content > p > img {
+    border-radius: var(--rg-radius);
+    box-shadow: var(--rg-shadow);
+}
+
+
+/* ------------------------------------------------------------ ingredients */
+
+// Unordered lists = ingredients. Diamond bullets, tight rhythm.
+main.content ul:not(.contains-task-list) {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1.4rem;
+
+    > li {
+        position: relative;
+        padding-left: 1.45rem;
+        margin: 0 0 0.3rem;
+        line-height: 1.55;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0.2rem;
+            top: 0.6em;
+            width: 6px;
+            height: 6px;
+            border-radius: 1px;
+            background: var(--rg-accent);
+            transform: rotate(45deg);
+        }
+
+        > ul { margin: 0.42rem 0 0.2rem; }
+
+        > ul > li::before {
+            background: none;
+            border: 1.5px solid var(--rg-accent);
+        }
+    }
+}
+
+
+/* ----------------------------------------------------------- instructions */
+
+// Ordered lists = steps. Numerals in accent discs.
+main.content ol {
+    list-style: none;
+    counter-reset: rg-step;
+    padding-left: 0;
+    margin: 0 0 1.5rem;
+
+    > li {
+        counter-increment: rg-step;
+        position: relative;
+        padding-left: 2.7rem;
+        margin: 0 0 0.85rem;
+
+        &::before {
+            content: counter(rg-step);
+            position: absolute;
+            left: 0;
+            top: 0.12em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.72rem;
+            height: 1.72rem;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background: var(--rg-accent);
+            color: #fff;
+            font-family: var(--rg-sans);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+            line-height: 1;
+        }
+    }
+
+    // Bolded lead-ins like **Sauce:** become the step's label.
+    > li > strong:first-child {
+        color: var(--rg-ink);
+        font-weight: 600;
+    }
+}
+
+body.theme-dark main.content ol > li::before { color: var(--rg-bg); }
+
+
+/* ------------------------------------------------------------------ rules */
+
+main.content hr {
+    border: none;
+    height: 1px;
+    background: var(--rg-line);
+    margin: 2.75rem 0;
+}
+
+// Recipes put `---` before each section heading, which already carries its own
+// rule — drop the divider so sections aren't double-ruled.
+main.content hr:has(+ h2) { display: none; }
+
+// The empty <header> the layout always emits shouldn't add space.
+main.content > header:empty,
+main.content > header > .header-meta:empty { margin: 0; }
+
+
+/* --------------------------------------------------- quotes / notes / code */
+
+main.content blockquote {
+    margin: 1.75rem 0;
+    padding: 1.1rem 1.3rem;
+    background: var(--rg-bg-tint);
+    border: none;
+    border-left: 3px solid var(--rg-accent);
+    border-radius: 0 var(--rg-radius) var(--rg-radius) 0;
+    color: var(--rg-ink-soft);
+    font-style: normal;
+
+    &::before { content: none; }
+    > :last-child { margin-bottom: 0; }
+    p { display: block; }
+}
+
+main.content .callout {
+    border-radius: var(--rg-radius);
+    box-shadow: var(--rg-shadow);
+    mix-blend-mode: normal;
+}
+
+main.content :not(pre) > code {
+    font-size: 0.88em;
+    padding: 0.14em 0.4em;
+    border-radius: 5px;
+    background: var(--rg-bg-tint);
+    color: var(--rg-accent-dark);
+}
+
+main.content pre {
+    border-radius: var(--rg-radius);
+    box-shadow: var(--rg-shadow);
+}
+
+main.content strong { font-weight: 600; }
+
+
+/* ------------------------------------------------------------- home: hero */
+
+.rg-hero {
+    margin: 0 0 3.25rem;
+
+    .rg-kicker {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--rg-accent);
+        margin: 0 0 0.9rem;
+    }
+
+    h1 {
+        font-family: var(--rg-display);
+        font-optical-sizing: auto;
+        font-size: clamp(2.4rem, 7vw, 3.6rem);
+        font-weight: 700;
+        line-height: 1.03;
+        letter-spacing: -0.028em;
+        margin: 0 0 1rem;
+        text-wrap: balance;
+
+        &::after { content: none; }
+    }
+
+    .rg-lede {
+        font-size: 1.08rem;
+        line-height: 1.65;
+        color: var(--rg-ink-soft);
+        max-width: 46ch;
+        margin: 0;
+        text-wrap: pretty;
+    }
+}
+
+// Section label above each grid
+.rg-section {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-family: var(--rg-sans) !important;
+    font-size: 0.76rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rg-ink-faint) !important;
+    border-bottom: none !important;
+    margin: 0 0 1.4rem !important;
+    padding: 0 !important;
+
+    &::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--rg-line);
+    }
+}
+
+
+/* ------------------------------------------------------------- home: grid */
+
+// Break out of the 720px reading column — the grid wants room to breathe.
+.rg-wide {
+    width: min(1120px, calc(100vw - clamp(2.5rem, 10vw, 6rem)));
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.rg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: clamp(1.1rem, 2.5vw, 1.75rem);
+    margin: 0 0 3.5rem;
+}
+
+.rg-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--rg-surface);
+    border: 1px solid var(--rg-line);
+    border-radius: var(--rg-radius);
+    overflow: hidden;
+    box-shadow: var(--rg-shadow);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1),
+                box-shadow 0.22s ease,
+                border-color 0.22s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--rg-shadow-lift);
+        border-color: color-mix(in srgb, var(--rg-accent) 40%, var(--rg-line));
+    }
+
+    // Image slot — uniform crop regardless of source aspect ratio.
+    picture,
+    > img {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    picture > img,
+    > img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 0;
+        box-shadow: none;
+        transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+
+    &:hover picture > img,
+    &:hover > img { transform: scale(1.035); }
+
+    .rg-card-body {
+        padding: 1rem 1.15rem 1.15rem;
+        border-top: 1px solid var(--rg-line);
+    }
+
+    .rg-card-title {
+        display: block;
+        font-family: var(--rg-display);
+        font-optical-sizing: auto;
+        font-size: 1.14rem;
+        font-weight: 600;
+        line-height: 1.22;
+        letter-spacing: -0.015em;
+        color: var(--rg-ink);
+        text-wrap: balance;
+    }
+
+    .rg-card-note {
+        display: block;
+        margin-top: 0.3rem;
+        font-size: 0.86rem;
+        line-height: 1.45;
+        color: var(--rg-ink-soft);
+    }
+
+    &:hover .rg-card-title { color: var(--rg-accent); }
+}
+
+// Pantry basics: same column track as the recipe grid so the two sections line
+// up, but a shallower image and smaller title to read as secondary.
+.rg-grid--compact {
+    .rg-card picture > img,
+    .rg-card > img { aspect-ratio: 16 / 10; }
+
+    .rg-card .rg-card-title { font-size: 1.02rem; }
+}
+
+@media (max-width: 560px) {
+    .rg-grid { grid-template-columns: 1fr; }
+    .rg-wide { width: 100%; margin-left: 0; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rg-card,
+    .rg-card picture > img,
+    .rg-card > img {
+        transition: none;
+    }
+    .rg-card:hover { transform: none; }
+    .rg-card:hover picture > img,
+    .rg-card:hover > img { transform: none; }
+}
+
+
+/* --------------------------------------------------------------- a11y/misc */
+
+main.content a:focus-visible,
+.rg-card:focus-visible {
+    outline: 2px solid var(--rg-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+::selection {
+    background: var(--rg-accent-wash);
+    color: var(--rg-accent-dark);
 }

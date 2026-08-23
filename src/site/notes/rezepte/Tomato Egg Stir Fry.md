@@ -4,7 +4,7 @@
 
 # Tomato Egg Stir Fry
 
-![tomato-egg-stir-fry.png|500](/img/user/images/tomato-egg-stir-fry.png)
+![Tomato and egg stir fry in a wok|500](/img/user/images/tomato-egg-stir-fry.png)
 
 ## Ingredients
 - 3-4 ripe tomatoes

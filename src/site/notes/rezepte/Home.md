@@ -2,17 +2,10 @@
 {"dg-publish":true,"permalink":"/rezepte/home/","tags":["gardenEntry"]}
 ---
 
-## Recipes
+<div class="rg-hero"><h1>Things worth cooking twice.</h1><p class="rg-lede">A working cookbook from the German Embassy Kreuzlingen — tested dishes, written down properly so they turn out the same way next time.</p></div>
 
-[[rezepte/Hainan Chicken Rice\|Hainan Chicken Rice]]
-[[rezepte/Smash Burger\|Smash Burger]]
-[[rezepte/Sourdough Bread\|Sourdough Bread]]
-[[rezepte/Smoked Mackerel & Beluga Lentil Power Bowl\|Smoked Mackerel & Beluga Lentil Power Bowl]]
-[[rezepte/Skillet-Steamed Broccolini with Lemon-Thyme Butter\|Skillet-Steamed Broccolini with Lemon-Thyme Butter]]
-[[rezepte/Tomato Egg Stir Fry\|Tomato Egg Stir Fry]]
-[[rezepte/Glazed Pork Tenderloin\|Glazed Pork Tenderloin]]
+<h2 class="rg-section">Recipes</h2>
+<div class="rg-wide"><div class="rg-grid"><a class="rg-card" href="/rezepte/hainan-chicken-rice/"><img src="/img/user/images/chicken_rice.png" alt="Hainan Chicken Rice" width="600"><span class="rg-card-body"><span class="rg-card-title">Hainan Chicken Rice</span><span class="rg-card-note">Poached chicken, fat-cooked rice, three sauces.</span></span></a><a class="rg-card" href="/rezepte/smash-burger/"><img src="/img/user/images/burger.png" alt="Smash Burger" width="600"><span class="rg-card-body"><span class="rg-card-title">Smash Burger</span><span class="rg-card-note">Thin patties, hard sear, melted cheddar.</span></span></a><a class="rg-card" href="/rezepte/sourdough-bread/"><img src="/img/user/images/bread.png" alt="Sourdough Bread" width="600"><span class="rg-card-body"><span class="rg-card-title">Sourdough Bread</span><span class="rg-card-note">Long ferment, open crumb, dark crust.</span></span></a><a class="rg-card" href="/rezepte/glazed-pork-tenderloin/"><img src="/img/user/images/glazed-pork-tenderloin.png" alt="Glazed Pork Tenderloin" width="600"><span class="rg-card-body"><span class="rg-card-title">Glazed Pork Tenderloin</span><span class="rg-card-note">Sake, soy and honey reduced to a sticky glaze.</span></span></a><a class="rg-card" href="/rezepte/tomato-egg-stir-fry/"><img src="/img/user/images/tomato-egg-stir-fry.png" alt="Tomato Egg Stir Fry" width="600"><span class="rg-card-body"><span class="rg-card-title">Tomato Egg Stir Fry</span><span class="rg-card-note">The ten-minute weeknight default.</span></span></a><a class="rg-card" href="/rezepte/smoked-mackerel-and-beluga-lentil-power-bowl/"><img src="/img/user/images/makrel.png" alt="Smoked Mackerel &amp; Beluga Lentil Power Bowl" width="600"><span class="rg-card-body"><span class="rg-card-title">Smoked Mackerel &amp; Beluga Lentil Bowl</span><span class="rg-card-note">Cold lentils, hot smoke, sharp dressing.</span></span></a><a class="rg-card" href="/rezepte/skillet-steamed-broccolini-with-lemon-thyme-butter/"><img src="/img/user/images/broccolini.png" alt="Skillet-Steamed Broccolini with Lemon-Thyme Butter" width="600"><span class="rg-card-body"><span class="rg-card-title">Skillet Broccolini, Lemon-Thyme Butter</span><span class="rg-card-note">Steamed then blistered in the same pan.</span></span></a></div></div>
 
-## Ingredients
-
-[[rezepte/Pickled Onions\|Pickled Onions]]
-[[rezepte/Unkillable Rye Starter\|Unkillable Rye Starter]]
+<h2 class="rg-section">Ingredients &amp; Basics</h2>
+<div class="rg-wide"><div class="rg-grid rg-grid--compact"><a class="rg-card" href="/rezepte/pickled-onions/"><img src="/img/user/images/onion.png" alt="Pickled Onions" width="600"><span class="rg-card-body"><span class="rg-card-title">Pickled Onions</span><span class="rg-card-note">Keeps for weeks. Improves most things.</span></span></a><a class="rg-card" href="/rezepte/unkillable-rye-starter/"><img src="/img/user/images/starter.png" alt="Unkillable Rye Starter" width="600"><span class="rg-card-body"><span class="rg-card-title">Unkillable Rye Starter</span><span class="rg-card-note">The engine behind the sourdough.</span></span></a></div></div>

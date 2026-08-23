@@ -4,7 +4,7 @@
 
 # Glazed Pork Tenderloin
 
-![glazed-pork-tenderloin.png|500](/img/user/images/glazed-pork-tenderloin.png)
+![Glazed pork medallions with cabbage salad|500](/img/user/images/glazed-pork-tenderloin.png)
 
 ## Ingredients
 - 1 pork tenderloin

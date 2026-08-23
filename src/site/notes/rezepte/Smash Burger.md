@@ -3,7 +3,7 @@
 ---
 
 # Smash Burgers
-![burger.png|500](/img/user/images/burger.png)
+![Two smash burgers with melted cheddar and pickled onions|500](/img/user/images/burger.png)
 ## Ingredients
 - Ground beef (20% fat), 70-85g per patty (1-2 per burger)
 - [[rezepte/Pickled Onions\|Pickled Onions]]
