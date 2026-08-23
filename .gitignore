@@ -11,3 +11,7 @@ src/site/styles/_theme.*.css
 .cache
 _site/
 **/.DS_Store
+.claude/
+.env.local
+.obsidian/plugins/
+.obsidian/workspace.json
