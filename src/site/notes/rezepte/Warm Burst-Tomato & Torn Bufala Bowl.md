@@ -6,7 +6,7 @@
 
 *Serves: 1 — 2 minutes active, 10 minutes waiting*
 
-![Burst cherry tomatoes and torn buffalo mozzarella over toasted sourdough|500](/img/user/images/warm-burst-tomato-bufala-bowl.png)
+![Burst cherry tomatoes and torn buffalo mozzarella over pan-fried gnocchi|500](/img/user/images/warm-burst-tomato-bufala-bowl.png)
 
 Hot, sweet-sour roasted tomatoes hitting cold, ultra-fatty buffalo mozzarella.
 
@@ -16,7 +16,7 @@ Hot, sweet-sour roasted tomatoes hitting cold, ultra-fatty buffalo mozzarella.
 - 2 cloves garlic, skin on, crushed flat with the heel of your hand
 - 2–3 tbsp good olive oil
 - Flaky sea salt (e.g. Maldon) and freshly ground black pepper
-- Base: toasted good sourdough bread, OR 200 g pasta / fresh gnocchi
+- 400 g fresh gnocchi
 - Optional: a few basil leaves
 
 ---
@@ -26,12 +26,12 @@ Hot, sweet-sour roasted tomatoes hitting cold, ultra-fatty buffalo mozzarella.
 1. Toss cherry tomatoes and crushed garlic cloves with a little olive oil and a pinch of salt.
 2. Roast in an air fryer or oven at 200°C for 10 minutes, until the tomatoes burst, blister, and char slightly.
 
-### Step 2: The base (meanwhile)
-1. Pasta or gnocchi: boil until done.
-2. Bread: toast a thick slice, or fry it in olive oil until golden.
+### Step 2: The gnocchi (meanwhile)
+1. Boil the gnocchi until they float, about 2 minutes, then drain.
+2. Optional: fry the drained gnocchi in a little olive oil until the edges turn golden and crisp.
 
 ### Step 3: Assemble
-1. Spoon the hot burst tomatoes, their juices, and the soft garlic (squeezed out of the skins) over the pasta or bread.
+1. Spoon the hot burst tomatoes, their juices, and the soft garlic (squeezed out of the skins) over the gnocchi.
 2. Tear the buffalo mozzarella into rough pieces with your hands — do not cut it — and set it straight onto the hot tomatoes.
 3. Drizzle with the remaining olive oil and season the cheese generously with flaky salt and fresh pepper. Add basil if using.
 
